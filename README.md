@@ -11,6 +11,8 @@ Email Queue will:
 - Allow you to organize your emails into queues you define and deal with each queue individually.
 - Show you the top item in a selected queue.
 - Allow you to switch queues.
+- Allow you to have save multiple draft messages at once
+- Allow you to access drafts easily
 - Let you perform the following actions on the top item in the queue:
     - Delete it
     - Delete it permanently
@@ -54,7 +56,6 @@ Email Queue will:
 - Have a unified inbox for all accounts
 
 ## Plugin Ideas
-Email Queue will:
 - A plugin that learn to automatically organise your email into your queues? (Maybe this is core to
   server?)
 - A HTML email viewer (maybe something like w3m or another [configured] HTML viewer) to view HTML
@@ -62,6 +63,7 @@ Email Queue will:
 - The ability to send any file as your email. For example, if it's a PDF, then it will be sent as an
   attachment to the recipient, but to you, it will literally be the contents of the email.
 - Pull contact information from X where X is any contact management service/application
+- Spellcheck
 
 ## Implementation
 Email Queue will have two components: the client and the server.
@@ -80,7 +82,7 @@ intelligent stuff like automagically placing emails into the proper queues.
 ### APIs
 #### Client Only APIs
 - APIs for composing emails (autocomplete, syntax highlighting, line wrapping, etc.)
-- APIs for email viewer
+- APIs for email viewer (to view PDF only emails, HTML emails, etc.)
 
 #### APIs that should exist in both Client and Server
 - APIs for contacts (contact autocomplete, group email blast list storage, placing certain emails in
@@ -89,4 +91,3 @@ intelligent stuff like automagically placing emails into the proper queues.
   implemented)
 - APIs for conversions of plain text to HTML/PDF/whatever to use as send medium (client or server or
   both or neither or whatever the heck the user wants?)
-
