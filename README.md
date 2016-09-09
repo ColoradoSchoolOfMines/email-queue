@@ -8,6 +8,8 @@ shown.
 
 ## Requirements
 Email Queue will:
+- Prioritize queues according to the emails within them
+- Assign each email a priority dynamically
 - Allow you to organize your emails into queues you define and deal with each queue individually.
 - Show you the top item in a selected queue.
 - Allow you to switch queues.
@@ -28,7 +30,7 @@ Email Queue will:
     - Delete the queue itself
     - Archive all inside
     - Move all items in queue to another queue
-- Allow you to use multiple accounts
+- Allow you to use multiple accounts (unified and un-unified inbox features)
 - Automatically send/retrieve emails
 - Allow you to manually send/retrieve emails
 - Allow you to go into offline mode
@@ -53,7 +55,7 @@ Email Queue will:
     - The user will have an option to send it as an attachment (possibly interpreted by something
       like `pdflatex`)
     - Most of this functionality should be plugin-based
-- Have a unified inbox for all accounts
+- Spellcheck
 
 ## Plugin Ideas
 - A plugin that learn to automatically organise your email into your queues? (Maybe this is core to
@@ -63,7 +65,6 @@ Email Queue will:
 - The ability to send any file as your email. For example, if it's a PDF, then it will be sent as an
   attachment to the recipient, but to you, it will literally be the contents of the email.
 - Pull contact information from X where X is any contact management service/application
-- Spellcheck
 
 ## Implementation
 Email Queue will have two components: the client and the server.
